@@ -1,0 +1,7 @@
+# import ChatFields from "./chat-fields-fragment.graphql"
+
+query chats($userId: ID!) {
+  myChats {
+    ...ChatFields
+  }
+}

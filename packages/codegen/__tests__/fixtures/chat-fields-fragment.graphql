@@ -1,0 +1,16 @@
+# import UserFields from "./user-fragment.graphql"
+
+fragment ChatFields on Chat {
+  id
+  users {
+    ...UserFields
+  }
+  messages {
+    id
+    content
+    user {
+      id
+      username
+    }
+  }
+}
